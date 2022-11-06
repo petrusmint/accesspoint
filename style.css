@@ -1,0 +1,456 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./fonts/Cera\ Pro\ Medium.otf');
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+    font-family: 'Cera Pro', sans-serif;
+    background-image: url('./images/image.png');
+}
+
+.main-landing {
+    width: 100%;
+    height: 100%;
+    max-width: 80rem;
+    max-height: 40rem;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+.left-container {
+    gap: 2rem;
+    height: 100%;
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FAFBFC;
+    border-radius: 30px 0 0 30px;
+}
+
+.right-container {
+    gap: 2rem;
+    height: 100%;
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFF;
+    border-radius: 0 30px 30px 0;
+}
+
+.gfx {
+    width: 23rem;
+}
+
+.logo {
+    width: 20rem;
+}
+
+#step-container {
+    position: relative;
+}
+
+.step-one {
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.step-one h2 {
+    color: #F26322;
+}
+
+.step-one p {
+    color: #353535;
+}
+
+.step-one .buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.step-one .buttons button {
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: transform 100ms;
+}
+
+.step-one .buttons button.accept {
+    color: #fff;
+    border: solid 2px #F26322;
+    background-color: #F26322;
+}
+
+.step-one .buttons button.cancel {
+    color: #F26322;
+    background-color: #fff;
+    border: solid 2px #F26322;
+}
+
+.step-one .buttons button:hover,
+.step-one .buttons button:focus {
+    transform: scale(1.2);
+}
+
+.step-two {
+    top: -20rem;
+    left: -60rem;
+    display: flex;
+    height: 640px;
+    width: 1280px;
+    position: absolute;
+    border-radius: 30px;
+    align-items: center;
+    background-color: grey;
+    justify-content: center;
+}
+
+.step-three {
+    padding: 0 3rem;
+}
+
+button.proceed {
+    position: absolute;
+    right: 3rem;
+    bottom: 0;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: transform 100ms;
+    color: #fff;
+    border: solid 2px #F26322;
+    background-color: #F26322;
+}
+
+button.proceed:hover,
+button.proceed:focus {
+    transform: scale(1.2);
+}
+
+.step-three h2 {
+    color: #F26322;
+}
+
+.step-three p {
+    color: #353535;
+}
+
+.step-four {
+    padding: 0 3rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: #F26322;
+}
+
+.form-group input {
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: solid 2px #DFDFDF;
+}
+
+.form-group input::placeholder {
+    color: #DFDFDF;
+}
+
+.step-three .submit-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.step-three .submit-container button {
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: transform 100ms;
+}
+
+.step-three .submit-container button.submit {
+    color: #fff;
+    border: solid 2px #F26322;
+    background-color: #F26322;
+}
+
+.step-three .submit-container button.clear {
+    color: #F26322;
+    background-color: #fff;
+    border: solid 2px #F26322;
+}
+
+.step-three .submit-container button:hover,
+.step-three .submit-container button:focus {
+    transform: scale(1.2);
+}
+
+.message.success {
+    color: #0fdd00;
+}
+
+.message.failed {
+    color: #f20000;
+}
+
+.step-four h2 {
+    color: #F26322;
+}
+
+.step-four p {
+    color: #353535;
+}
+
+.wifi-access {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border: dashed 3px #F26322;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 2rem;
+}
+
+.wifi-access p {
+    color: #F26322;
+    padding: 0;
+    margin: 0;
+}
+
+.step-four button.continue {
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: transform 100ms;
+    color: #fff;
+    border: solid 2px #F26322;
+    background-color: #F26322;
+}
+
+.step-four button.continue:hover,
+.step-four button.continue:focus {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 1400px) {
+    .main-landing {
+        max-width: 72rem;
+        max-height: 38rem;
+    }
+
+    .step-two {
+        top: -19rem;
+        left: -54rem;
+        height: 608px;
+        width: 1152px;
+    }
+
+    .step-two iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    button.proceed {
+        right: 1rem;
+        bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-landing {
+        max-width: 60rem;
+        max-height: 35rem;
+    }
+
+    .gfx {
+        width: 20rem;
+    }
+
+    .logo {
+        width: 17rem;
+    }
+
+    .step-one h2 {
+        font-size: 24px;
+    }
+
+    .step-two {
+        top: -17.5rem;
+        left: -45rem;
+        height: 560px;
+        width: 960px;
+    }
+
+    .step-three h2 {
+        font-size: 24px;
+    }
+
+    .step-four h2 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 996px) {
+    .main-landing {
+        max-width: 46rem;
+        max-height: 33rem;
+    }
+
+    .gfx {
+        width: 17rem;
+    }
+
+    .logo {
+        width: 15rem;
+    }
+
+    .step-two {
+        top: -16.5rem;
+        left: -34.5rem;
+        height: 528px;
+        width: 736px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .main-landing {
+        max-width: 77%;
+        max-height: unset;
+        margin: 5rem 0;
+    }
+
+    .left-container {
+        border-radius: 30px 30px 0 0;
+        padding: 5em 0 2em;
+    }
+
+    .right-container {
+        border-radius: 0 0 30px 30px;
+        padding: 1rem 0 3em;
+    }
+
+    .step-one {
+        align-items: center;
+    }
+
+    .step-one p {
+        text-align: center;
+    }
+
+    .step-two {
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: unset;
+        overflow: hidden;
+        border-radius: 0;
+        position: relative;
+        padding-top: 56.25%;
+    }
+
+    .step-two iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #step-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .step-three {
+        padding: 0 3rem;
+        text-align: center;
+    }
+
+    .step-three .submit-container {
+        justify-content: center;
+    }
+
+    .step-four {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .main-landing {
+        max-width: 100%;
+        margin: 3em 1em;
+    }
+
+    .left-container {
+        padding: 3em 0 2em;
+    }
+
+    .step-one {
+        padding: 0 1rem;
+    }
+
+    .step-one h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .step-one .buttons button {
+        font-size: 13px;
+    }
+
+    .logo {
+        width: 13rem;
+    }
+
+    .gfx {
+        width: 11rem;
+    }
+
+    .step-three h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .step-three .submit-container button {
+        font-size: 13px;
+    }
+
+    .step-four button.continue {
+        font-size: 13px;
+    }
+
+    .wifi-access {
+        padding: 10px;
+    }
+
+    .wifi-access img {
+        width: 2rem;
+    }
+
+    .wifi-access p {
+        font-size: 12px;
+    }
+}
