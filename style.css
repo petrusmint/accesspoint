@@ -399,6 +399,10 @@ button.proceed:focus {
 }
 
 @media only screen and (max-width: 575px) {
+    body {
+        min-height: 100vh;
+    }
+
     .main-landing {
         max-width: 100%;
         margin: 3em 1em;
